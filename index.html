@@ -113,14 +113,19 @@
       z-index: -1;
     }
 
+    .img-wrapper {
+      padding: 30px 80px;
+      max-width: 460px;
+    }
+
     .app-demo-img {
       width: 100%;
-      max-width: 460px;
       object-fit: contain;
       filter: drop-shadow(0 25px 50px rgba(0, 0, 0, 0.3));
       animation: float 6s ease-in-out infinite;
       transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
       border-radius: 30px;
+      filter: drop-shadow(0 0 3rem rgb(11, 11, 11));
     }
 
     .app-demo-img:hover {
@@ -319,7 +324,10 @@
         align-items: center
       }
 
-      .app-demo-img {
+
+
+      .img-wrapper {
+        padding: 10px 80px;
         max-width: 380px
       }
     }
@@ -339,7 +347,8 @@
         margin-bottom: 1rem
       }
 
-      .app-demo-img {
+      .img-wrapper {
+        padding: 30px 40px;
         max-width: 260px
       }
 
@@ -355,8 +364,10 @@
 <body>
   <div class="container">
     <div class="content-wrapper">
-      <div class="app-showcase">
-        <img src="assets/demo-juya.png" alt="Calendrier app demo" class="app-demo-img" style="max-width:300px;">
+     <div class="app-showcase">
+        <div class="img-wrapper">
+          <img src="assets/demo-juya.png" alt="Calendrier app demo" class="app-demo-img">
+        </div>
       </div>
       <div class="content">
         <h1>JUYA</h1>
@@ -372,14 +383,14 @@
             <span>App Store</span>
           </a>
 
-          <a href="https://play.google.com/store/apps/details?id=juya.app" class="download-btn play-store"
+          <!-- <a href="https://play.google.com/store/apps/details?id=juya.app" class="download-btn play-store"
             aria-label="Télécharge sur Google Play">
             <svg viewBox="0 0 512 512" fill="currentColor">
               <path
                 d="M325.3 234.3L104.6 13.7C97.7 6.8 87.2 4.8 78.1 9.3c-9.1 4.5-14.8 13.9-14.8 24.2v445c0 10.3 5.7 19.7 14.8 24.2 9.1 4.5 19.6 2.5 26.5-4.4l220.7-220.7c12.5-12.5 12.5-32.8 0-45.3zM371.8 256l-59.6 59.6 99.8 99.8c7.6 7.6 19.8 7.6 27.4 0l45.3-45.3c7.6-7.6 7.6-19.8 0-27.4l-99.8-99.8zm0-59.6l99.8-99.8c7.6-7.6 7.6-19.8 0-27.4l-45.3-45.3c-7.6-7.6-19.8-7.6-27.4 0l-99.8 99.8 59.6 59.6z" />
             </svg>
             <span>Google Play</span>
-          </a>
+          </a> -->
         </div>
 
         <p class="footer-note">
